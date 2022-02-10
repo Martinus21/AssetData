@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    color: #212529;
+    &:hover {
+        color: #1f1f1f;
+    }
+}
+
+/* Helpers */
+@import "./helpers/colorTemplate";
+@import "./helpers/colorBgColor";
+@import "./helpers/body";
+@import "./helpers/layout";
+@import "./helpers/fontSize";
+
+// Import Components
+@import "./components/header";
+@import "./components/sidebar";

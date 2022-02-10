@@ -1,0 +1,86 @@
+/* BUTTON HEADER AND SIDEBAR */
+/* BURGER BUTTON */
+.ad-iconBurger {
+  cursor: pointer;
+  .ad-bar {
+    width: 26px;
+    height: 3px;
+    background: #fff;
+    box-shadow: 1px 1px 3px RGBa(0, 0, 0, 0.4);
+    border-radius: 10px;
+    &:not(:first-child) {
+      margin-top: 5px;
+    }
+  }
+}
+/* END BURGER BUTTON */
+  
+/* PROFILE DROPDOWN */
+.ad-dropdown-btn-profile {
+  background-color: cornflowerblue;
+  padding: 6px 16px;
+  border-radius: 8px;
+  .ad-username-text-profile {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 8px !important;
+    .ad-username {
+      color: white;
+      margin-bottom: 0;
+      margin-top: 5px;
+      font-size: 14px;
+      line-height: 14px;
+      margin: 0;
+      span {
+        color: white;
+        font-size: 10px;
+        line-height: 10px;
+        margin-bottom: 4px;
+        display: block;
+      }
+    }
+  }
+  &-arrow {
+    &-icons {
+      vertical-align: middle;
+      margin-top: 4px;
+    }
+  }
+}
+
+.ad-dropdown-menu-profile {
+  width: 300px;
+  background: lighten($color: #becaf7, $amount: 5);
+  border: none;
+  padding-bottom: 0;
+  &-img {
+    position: relative;
+    top: -40px;
+  }
+  &-item:nth-child(odd) {
+    border-bottom: 1px solid #becaf7;
+  }
+  &-item {
+    background-color: lighten($color: #becaf7, $amount: 8);
+    .ad-link-dropdownHeader {
+      color: #f9ba42;
+    }
+    .ad-link-dropdownHeader-logout {
+      cursor: pointer;
+      color: lighten(red, 10);
+    }
+  }
+  &-textName {
+    position: relative;
+    top: -20px;
+  }
+  &-item:hover {
+    background-color: lighten(#becaf7, 10);
+    .ad-link-dropdownHeader {
+      text-decoration: none;
+    }
+  }
+}
+/* END PROFILE DROPDOWN */
+/* END BUTTON HEADER AND SIDEBAR */
